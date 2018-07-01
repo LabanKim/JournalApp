@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ViewEntryContentActivity"
+    tools:showIn="@layout/activity_view_entry_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_entry_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="This is the Title"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="17sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_entry_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Created On: 16-05-2018"
+            android:textSize="16sp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_entry_title"
+            android:layout_marginStart="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_entry_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_entry_date"
+            android:textColor="#002312"
+            android:textSize="17sp"
+            android:layout_margin="16dp"
+            tools:text="It is highly recommended that you provide users that signed in with Google the ability to disconnect their Google account from your app. If the user deletes their account, you must delete the information that your app obtained from the Google APIs."/>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>
